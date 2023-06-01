@@ -1,0 +1,9 @@
+<p>create-onomatopia works!</p>
+
+<form #onomatopiaForm="ngForm" (ngSubmit)="createOnomatopia()">
+  <label>
+    <span>Onomatopia: </span>
+    <input #inputOnomatopia="ngModel" type="text" name="newOnomatopia" [(ngModel)]="newOnomatopia">
+  </label>
+  <button type="submit">Create Onomatopia</button>
+</form>
