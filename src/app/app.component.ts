@@ -11,8 +11,8 @@ export class AppComponent {
   onomatopoeiaList: string[] = [];
 
   onReceiveNewOnomatopia(event: string): void {
-    alert(event);
     this.onomatopoeiaList.push(event);
-    alert(this.onomatopoeiaList);
+    alert(`"${event}" a été ajouté à :\n Liste d'onomatopées: [${this.onomatopoeiaList}]`);
+    // alert(this.onomatopoeiaList);
   }
 }
